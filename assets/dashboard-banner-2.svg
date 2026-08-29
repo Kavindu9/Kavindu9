@@ -1,0 +1,104 @@
+<svg viewBox="0 0 1200 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kavindu — Full-Stack Engineer dashboard banner">
+<defs>
+  <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" stop-color="#0B0C0F"/>
+    <stop offset="100%" stop-color="#000000"/>
+  </linearGradient>
+  <radialGradient id="roadGlow" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#2DD4BF" stop-opacity="0.55"/>
+    <stop offset="100%" stop-color="#2DD4BF" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="roadFade" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" stop-color="#2DD4BF" stop-opacity="0"/>
+    <stop offset="100%" stop-color="#2DD4BF" stop-opacity="0.45"/>
+  </linearGradient>
+  <filter id="softGlow" x="-60%" y="-60%" width="220%" height="220%">
+    <feGaussianBlur stdDeviation="4" result="blur"/>
+    <feMerge>
+      <feMergeNode in="blur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+  <filter id="wideGlow" x="-100%" y="-100%" width="300%" height="300%">
+    <feGaussianBlur stdDeviation="14"/>
+  </filter>
+</defs>
+
+<rect x="20" y="20" width="1160" height="360" rx="180.0" fill="url(#bgGrad)" stroke="rgba(255,255,255,0.09)" stroke-width="1.5"/>
+
+<!-- gauge tracks -->
+<path d="M 119.00 59.70 A 162.00 162.00 0 0 0 119.00 340.30" fill="none" stroke="#24262B" stroke-width="12" stroke-linecap="round"/>
+<path d="M 1081.00 59.70 A 162.00 162.00 0 0 1 1081.00 340.30" fill="none" stroke="#24262B" stroke-width="12" stroke-linecap="round"/>
+<!-- gauge fills (sweep in on load) -->
+<path d="M 119.00 59.70 A 162.00 162.00 0 0 0 38.14 206.78" fill="none" stroke="#2DD4BF" stroke-width="12" stroke-linecap="round" filter="url(#softGlow)" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100">
+  <animate attributeName="stroke-dashoffset" values="100;0" dur="1.4s" begin="0.2s" fill="freeze" calcMode="spline" keySplines="0.22 0.61 0.36 1"/>
+</path>
+<path d="M 1081.00 59.70 A 162.00 162.00 0 0 1 1150.62 259.64" fill="none" stroke="#4B4F58" stroke-width="12" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100">
+  <animate attributeName="stroke-dashoffset" values="100;0" dur="1.4s" begin="0.35s" fill="freeze" calcMode="spline" keySplines="0.22 0.61 0.36 1"/>
+</path>
+
+<!-- top bar: left status dot (pulsing, like a live indicator) -->
+<circle cx="258" cy="68" r="4.5" fill="#2DD4BF"/>
+<circle cx="258" cy="68" r="4.5" fill="none" stroke="#2DD4BF" stroke-width="1.5">
+  <animate attributeName="r" values="4.5;10;4.5" dur="2.2s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0.7;0;0.7" dur="2.2s" repeatCount="indefinite"/>
+</circle>
+
+<!-- top bar: now-charging pill -->
+<rect x="483" y="50" width="180" height="36" rx="18" fill="rgba(255,255,255,0.045)" stroke="rgba(255,255,255,0.09)" stroke-width="1"/>
+<rect x="503" y="61" width="3" height="14" rx="1.5" fill="#2DD4BF">
+  <animate attributeName="height" values="14;6;18;10;14" keyTimes="0;0.25;0.5;0.75;1" dur="1.1s" repeatCount="indefinite"/>
+  <animate attributeName="y" values="61;69;57;65;61" keyTimes="0;0.25;0.5;0.75;1" dur="1.1s" repeatCount="indefinite"/>
+</rect>
+<rect x="510" y="57" width="3" height="22" rx="1.5" fill="#2DD4BF">
+  <animate attributeName="height" values="22;10;16;24;22" keyTimes="0;0.25;0.5;0.75;1" dur="0.9s" repeatCount="indefinite"/>
+  <animate attributeName="y" values="57;69;63;55;57" keyTimes="0;0.25;0.5;0.75;1" dur="0.9s" repeatCount="indefinite"/>
+</rect>
+<rect x="517" y="64" width="3" height="8" rx="1.5" fill="#2DD4BF">
+  <animate attributeName="height" values="8;16;6;12;8" keyTimes="0;0.25;0.5;0.75;1" dur="1.0s" begin="0.1s" repeatCount="indefinite"/>
+  <animate attributeName="y" values="64;56;66;60;64" keyTimes="0;0.25;0.5;0.75;1" dur="1.0s" begin="0.1s" repeatCount="indefinite"/>
+</rect>
+<rect x="524" y="59" width="3" height="18" rx="1.5" fill="#2DD4BF">
+  <animate attributeName="height" values="18;8;20;14;18" keyTimes="0;0.25;0.5;0.75;1" dur="0.95s" begin="0.15s" repeatCount="indefinite"/>
+  <animate attributeName="y" values="59;69;57;63;59" keyTimes="0;0.25;0.5;0.75;1" dur="0.95s" begin="0.15s" repeatCount="indefinite"/>
+</rect>
+<text x="539" y="73" font-family="'SF Mono','Consolas','Roboto Mono','Courier New',monospace" font-size="14.5" fill="#F5F6F7">Now Charging</text>
+
+<!-- top bar: right EXP badge (inline, matches the "LIMIT" badge from the reference) -->
+<circle cx="862" cy="68" r="23" fill="#F5F6F7"/>
+<text x="862" y="63" text-anchor="middle" font-family="'SF Mono','Consolas','Roboto Mono','Courier New',monospace" font-size="7.5" letter-spacing="1.3" fill="#0B0C0F" font-weight="700">EXP</text>
+<text x="862" y="78" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" fill="#0B0C0F" font-weight="800">6+</text>
+
+<!-- LEFT stat block -->
+<text x="200" y="200" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="66" font-weight="800" fill="#F5F6F7" letter-spacing="-1">4+</text>
+<text x="200" y="227" text-anchor="middle" font-family="'SF Mono','Consolas','Roboto Mono','Courier New',monospace" font-size="12.5" letter-spacing="2.5" fill="#888D96">TECH STACKS</text>
+<text x="200" y="260" text-anchor="middle" font-family="'SF Mono','Consolas','Roboto Mono','Courier New',monospace" font-size="12.5" fill="#4B4F58">SLIIT · IEEE Published</text>
+
+<!-- RIGHT stat block -->
+<text x="1000" y="200" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="66" font-weight="800" fill="#F5F6F7" letter-spacing="-1">8</text>
+<text x="1000" y="227" text-anchor="middle" font-family="'SF Mono','Consolas','Roboto Mono','Courier New',monospace" font-size="12.5" letter-spacing="2.5" fill="#888D96">FEATURED BUILDS</text>
+
+<!-- center: name + tagline -->
+<text x="600" y="132" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="50" font-weight="800" letter-spacing="6" fill="#F5F6F7">KAVINDU</text>
+<text x="600" y="160" text-anchor="middle" font-family="'SF Mono','Consolas','Roboto Mono','Courier New',monospace" font-size="15" fill="#888D96">Full-Stack Engineer</text>
+
+<!-- receding road -->
+<ellipse cx="600" cy="248" rx="130" ry="46" fill="url(#roadGlow)" filter="url(#wideGlow)"/>
+<line x1="472" y1="342" x2="592" y2="250" stroke="url(#roadFade)" stroke-width="2.5"/>
+<line x1="728" y1="342" x2="608" y2="250" stroke="url(#roadFade)" stroke-width="2.5"/>
+<!-- terminal cursor at the vanishing point -->
+<text x="558" y="256" text-anchor="end" font-family="'SF Mono','Consolas','Roboto Mono','Courier New',monospace" font-size="12" fill="#F5F6F7">kavindu@dev:~$</text>
+<rect x="562" y="244" width="9" height="16" fill="#2DD4BF">
+  <animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;0.45;0.5;0.95;1" dur="1.3s" repeatCount="indefinite"/>
+</rect>
+
+<!-- bottom bar -->
+<text x="270" y="366" font-family="'SF Mono','Consolas','Roboto Mono','Courier New',monospace" font-size="12.5" fill="#888D96">Colombo · GMT+5:30</text>
+
+<text x="600" y="366" text-anchor="middle" font-family="'SF Mono','Consolas','Roboto Mono','Courier New',monospace" font-size="13" letter-spacing="1.5">
+  <tspan fill="#4B4F58">LEARN&#160;&#183;&#160;</tspan><tspan fill="#F5F6F7" font-weight="700">BUILD</tspan><tspan fill="#4B4F58">&#160;&#183;&#160;SHIP&#160;&#183;&#160;SCALE</tspan>
+</text>
+
+<text x="930" y="366" text-anchor="end" font-family="'SF Mono','Consolas','Roboto Mono','Courier New',monospace" font-size="12.5" fill="#888D96">EN · SI</text>
+
+</svg>
