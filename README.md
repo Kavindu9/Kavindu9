@@ -16,8 +16,10 @@
      permissions and set it to "Read and write permissions".
   The dashboard banner itself already animates on its own: the gauges
   sweep in on load, the status dot pulses, the "Now Building" bars move
-  like a live equalizer, and the terminal cursor blinks — no setup
-  needed for any of that, it's baked into the SVG.
+  like a live equalizer, and the terminal cursor blinks. The three
+  proficiency panels further down (Front-End / Back-End / Database)
+  animate the same way — each bar fills in on load, cascading top to
+  bottom. None of that needs setup, it's baked into the SVGs.
   Everything else is already filled in from what you'd told me.
 -->
 
@@ -33,8 +35,7 @@
 
 [![Email](https://img.shields.io/badge/Email-kavinduliyo%40gmail.com-2DD4BF?style=for-the-badge&logo=gmail&logoColor=0B0C0F)](mailto:kavinduliyo@gmail.com)
 [![Portfolio](https://img.shields.io/badge/Portfolio-kavindu.online-2DD4BF?style=for-the-badge&logo=googlechrome&logoColor=0B0C0F)](https://kavindu.online)
-[![Axion Digital](https://img.shields.io/badge/Axion%20Digital-axiontechworld.com-2DD4BF?style=for-the-badge&logoColor=0B0C0F)](https://axiontechworld.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-2DD4BF?style=for-the-badge&logo=linkedin&logoColor=0B0C0F)](https://www.linkedin.com/in/ykavindu-liyanaarachchi-693516146) <!-- replace your-linkedin -->
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-2DD4BF?style=for-the-badge&logo=linkedin&logoColor=0B0C0F)](https://www.linkedin.com/in/kavindu-liyanaarachchi-693516146/) <!-- replace your-linkedin -->
 
 </div>
 
@@ -78,42 +79,14 @@ Comfortable moving between PHP/Laravel, React/Next.js, Java/Spring Boot, and Wor
 ![Google Cloud Vision](https://img.shields.io/badge/Cloud%20Vision-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white)
 ![Tesseract OCR](https://img.shields.io/badge/Tesseract%20OCR-4B4F58?style=for-the-badge&logoColor=white)
 
-**Payments & Tools**
-
-![PayPal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)
-![PayHere](https://img.shields.io/badge/PayHere-4B4F58?style=for-the-badge&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 
 **Proficiency Breakdown**
 
-Front-End Engine
-```
-HTML5        ████████████████████  100%
-CSS / SCSS   ███████████████████░  95%
-JavaScript   ██████████████████░░  90%
-React        █████████████████░░░  85%
-Next.js      ████████████████░░░░  80%
-Tailwind     ██████████████████░░  90%
-Bootstrap    ███████████████████░  95%
-```
+<img src="./assets/skill-frontend.svg" width="100%" alt="Front-end proficiency: HTML5 100%, CSS/SCSS 95%, JavaScript 90%, React 85%, Next.js 80%, Tailwind 90%, Bootstrap 95%" />
 
-Back-End Engine
-```
-PHP          ██████████████████░░  90%
-Node.js      ████████████████░░░░  80%
-C# / .NET    ████████████████░░░░  80%
-Java         ███████████████░░░░░  75%
-Python       ████████████████░░░░  80%
-REST API     ██████████████████░░  90%
-```
+<img src="./assets/skill-backend.svg" width="100%" alt="Back-end proficiency: PHP 90%, Node.js 80%, C#/.NET 80%, Java 75%, Python 80%, REST API 90%" />
 
-Database System
-```
-MySQL        ██████████████████░░  90%
-SQL Server   █████████████████░░░  85%
-```
+<img src="./assets/skill-database.svg" width="100%" alt="Database proficiency: MySQL 90%, SQL Server 85%" />
 
 <br/>
 
