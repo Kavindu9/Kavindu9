@@ -28,7 +28,7 @@
 <img src="./assets/dashboard-banner.svg" width="100%" alt="Kavindu — Full-Stack Engineer dashboard banner" />
 
 <a href="https://kavindu.online">
-  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=16&pause=1200&color=2DD4BF&center=true&vCenter=true&width=600&lines=Full-Stack+Engineer+%40+Axion+Digital;Building+with+PHP%2C+Laravel%2C+React+%26+Next.js;AI-Integrated+Platform+Engineer;Based+in+Colombo%2C+Sri+Lanka" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=16&pause=1200&color=2DD4BF&center=true&vCenter=true&width=600&lines=Senior-Web+Developer+%40+Pulse+Resorts;Building+with+PHP%2C+React+%26+Next.js;AI-Integrated+Platform+Engineer" alt="Typing SVG" />
 </a>
 
 <br/>
