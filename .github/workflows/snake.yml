@@ -1,4 +1,10 @@
-name: Generate contribution snake
+name: Generate profile cards
+
+# Generates four SVGs and pushes them all to the "output" branch:
+#   - github-contribution-grid-snake.svg (+ dark variant)  — via Platane/snk
+#   - github-stats.svg, top-languages.svg                  — via our own script
+# Everything runs on GitHub's own infrastructure with the token GitHub
+# already provides to every workflow. No fork, no Vercel account, no PAT.
 
 on:
   schedule:
@@ -15,6 +21,8 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
+      - uses: actions/checkout@v4
+
       - name: Generate snake SVGs
         uses: Platane/snk/svg-only@v3
         with:
@@ -23,7 +31,12 @@ jobs:
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
 
-      - name: Push snake SVGs to the output branch
+      - name: Generate stats + top-languages cards
+        run: python3 .github/scripts/generate_stats.py dist
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Push all cards to the output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output
