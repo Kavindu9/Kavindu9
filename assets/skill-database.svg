@@ -1,0 +1,37 @@
+<svg viewBox="0 0 620 144" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Database System proficiency">
+<defs>
+  <linearGradient id="databasesystemBg" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" stop-color="#0B0C0F"/>
+    <stop offset="100%" stop-color="#000000"/>
+  </linearGradient>
+  <linearGradient id="databasesystemGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#7DB8F5" stop-opacity="0.75"/>
+    <stop offset="100%" stop-color="#7DB8F5" stop-opacity="1"/>
+  </linearGradient>
+  <filter id="databasesystemGlow" x="-40%" y="-200%" width="180%" height="500%">
+    <feGaussianBlur stdDeviation="2.2" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+</defs>
+<rect x="1" y="1" width="618" height="142" rx="16" fill="url(#databasesystemBg)" stroke="rgba(255,255,255,0.09)" stroke-width="1.5"/>
+<circle cx="30" cy="28" r="4" fill="#7DB8F5"/>
+<text x="42" y="32" font-family="'SF Mono','Consolas','Roboto Mono','Courier New',monospace" font-size="12.5" letter-spacing="2.5" fill="#4B4F58">DATABASE SYSTEM</text>
+<line x1="26" y1="42" x2="594" y2="42" stroke="rgba(255,255,255,0.09)" stroke-width="1"/>
+
+<text x="26" y="75.5" font-family="'SF Mono','Consolas','Roboto Mono','Courier New',monospace" font-size="13" fill="#888D96">MySQL</text>
+<rect x="176" y="66.0" width="336" height="10" rx="5.0" fill="#24262B"/>
+<rect x="176" y="66.0" width="302.4" height="10" rx="5.0" fill="url(#databasesystemGrad)" filter="url(#databasesystemGlow)">
+  <animate attributeName="width" values="0;302.4" dur="0.9s" begin="0.15s" fill="freeze" calcMode="spline" keySplines="0.22 0.61 0.36 1"/>
+</rect>
+<text x="528" y="75.5" font-family="'SF Mono','Consolas','Roboto Mono','Courier New',monospace" font-size="12.5" font-weight="700" fill="#F5F6F7" opacity="0">90%
+  <animate attributeName="opacity" values="0;1" dur="0.3s" begin="0.80s" fill="freeze"/>
+</text>
+<text x="26" y="109.5" font-family="'SF Mono','Consolas','Roboto Mono','Courier New',monospace" font-size="13" fill="#888D96">SQL Server</text>
+<rect x="176" y="100.0" width="336" height="10" rx="5.0" fill="#24262B"/>
+<rect x="176" y="100.0" width="285.6" height="10" rx="5.0" fill="url(#databasesystemGrad)" filter="url(#databasesystemGlow)">
+  <animate attributeName="width" values="0;285.6" dur="0.9s" begin="0.26s" fill="freeze" calcMode="spline" keySplines="0.22 0.61 0.36 1"/>
+</rect>
+<text x="528" y="109.5" font-family="'SF Mono','Consolas','Roboto Mono','Courier New',monospace" font-size="12.5" font-weight="700" fill="#F5F6F7" opacity="0">85%
+  <animate attributeName="opacity" values="0;1" dur="0.3s" begin="0.91s" fill="freeze"/>
+</text>
+</svg>
