@@ -54,6 +54,7 @@ Comfortable moving between PHP/Laravel, React/Next.js, Java/Spring Boot, and Wor
  
 ![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
 ![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Java](https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=openjdk&logoColor=white)
 ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
@@ -77,14 +78,8 @@ Comfortable moving between PHP/Laravel, React/Next.js, Java/Spring Boot, and Wor
 ![Gemini](https://img.shields.io/badge/Gemini%20API-886FBF?style=for-the-badge&logo=googlegemini&logoColor=white)
 ![Google Cloud Vision](https://img.shields.io/badge/Cloud%20Vision-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white)
 ![Tesseract OCR](https://img.shields.io/badge/Tesseract%20OCR-4B4F58?style=for-the-badge&logoColor=white)
- 
-**Payments & Tools**
- 
-![PayPal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)
-![PayHere](https://img.shields.io/badge/PayHere-4B4F58?style=for-the-badge&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+
+
  
 **Proficiency Breakdown**
  
